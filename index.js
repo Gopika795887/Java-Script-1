@@ -1,29 +1,32 @@
 while(true){
-var a=parseInt(prompt("Enter First Number"));
-var b=parseInt(prompt("Enter second Number"));
-var op=prompt("Enter operator");
-var res;
-if(op.toLowerCase()==='exit'){
-    console.log('Calculator Closed');
-    break;
-}
-if(op==='+'){
-    res=a+b;
-}
-else if(op==='-'){
-    res=a-b;
-}
-
- else if(op==='*'){
-    res=a*b;
-}
-
-else if(op==='/'){
-    res=a/b;
-}
-
-else {
-  res="Invalid Operator";
-}
-console.log("output :",res)
-}
+    var a=parseInt(prompt("Enter First Number"));
+    var b=parseInt(prompt("Enter second Number"));
+    var op=prompt("Enter operator");
+    var res;
+    if(op==='+'){
+        res=a+b;
+        document.getElementById('output').innerHTML+='ouput is' +res;
+        break;
+    }
+    else if(op==='-'){
+        res=a-b;
+        document.getElementById('output').innerHTML+='ouput is' +res;
+        break;
+    }
+    
+     else if(op==='*'){
+        res=a*b;
+         document.getElementById('output').innerHTML+='ouput is' +res;
+        break;
+    }
+    
+    else if(op==='/'){
+        res=a/b;
+        document.getElementById('output').innerHTML+='ouput is' +res;
+        break;
+    }
+    
+    else {
+      res="Invalid Operator";
+    }
+    }
